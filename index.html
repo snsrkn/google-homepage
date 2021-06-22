@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8"
+    </head>
+    <body>
+        <style>
+            #navbar {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                padding: 2em;
+            }
+            .algn {
+                margin-right: 20px;
+            }
+            .navdiv {
+                display: flex;
+                float: right;
+                align-items: center;
+                justify-items: center;
+            }
+            .nav-link {
+                text-decoration: none;
+                color: #222;
+                font-family: sans-serif;
+                font-size: 13px;
+            }
+            .nav-link:hover {
+                text-decoration: underline;
+                color: rgb(61, 14, 233);
+            }
+            .apps-icon {
+                width: 15px;
+                display: grid;
+                grid-template-columns: 4px 4px 4px;
+                grid-template-rows: 4px 4px 4px 4px;
+                grid-gap: 2px;
+                border-radius: 50%;
+            }
+            .apps-icon:hover {
+                background-color: gainsboro;
+            }
+            .dots {
+                background-color: gray;
+                border-radius: 50%;
+            }
+            .nav-img {
+                width: 2em;
+                height: auto;
+                border-width: 5px;
+                border-color: rgb(241, 240, 241);
+                border-style: hidden;
+                border-radius: 50%;
+            }
+            .nav-img:hover {
+                border-style: solid;
+            }
+            #ftr {
+                position: absolute;
+                bottom: 0px;
+                right: 0;
+                left: 0;
+                background-color: rgb(233, 233, 233);
+                padding: 1em;
+            }
+            .flink-right {
+                display: flex;
+                float: right;
+                display: block;
+                padding-right: 15px;
+            }
+            .flink-left {
+                display: flex;
+                float: left;
+                display: block;
+                padding-right: 15px;
+            }
+            .cntrdv {
+                display: flex;
+                justify-content: center;
+                padding-top: 12em;
+            }
+            .bttnsdiv {
+                display: flex;
+                justify-content: center;
+                padding: 25px;
+            }
+            .npt {
+                width: 52em;
+                height: 2em;
+                border-radius: 15px;
+            }
+            .logopic {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            .buttons {
+                margin: 5px;
+                padding: 5px 20px;
+            }
+        </style>
+        <nav id="navbar">
+            <div class="navdiv">
+            <a id="gmail" class="nav-link gml-imgs algn" href="#">Gmail</a>
+            <a id="imgs" class="nav-link gml-imgs algn" href="#">Images</a>
+            <div class="apps-icon algn"  alt="google apps">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+            </div>
+            <div class="divnavimg">
+            <img class="nav-img " src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/t9euiqnpg5t08m71ki7d" alt="user profile photo">
+            </div>
+        </nav>
+        <div class="cntrdv">
+            <form id="srch-form" class="cntr">
+                <div class="logopic">
+                <img id="logo" class="cntr" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </div>
+                <div>
+                <input id="search" class="npt" type="text">
+                </div>
+                <div class="bttnsdiv">
+                <button id="sbutton" class="buttons">Google Search</button>
+                <button id="lbutton" class="buttons">I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </div>
+        <footer id="ftr">
+            <a class="flink-left nav-link" id="ads" href="#">Advertising</a>
+            <a class="flink-left nav-link" id="bsnss" href="#">Business</a>
+            <a class="flink-left nav-link" id="hsw" href="#">How Search Works</a>
+            <a class="flink-right nav-link" id="prvcy" href="#">Privacy</a>
+            <a class="flink-right nav-link" id="trms" href="#">Terms</a>
+            <a class="flink-right nav-link" id="sttngs" href="#">Settings</a>
+        </footer>
+    </body>
+</html>
